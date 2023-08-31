@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "get-billing-address"
+client_id = "9102fa12180c863e7e91e0914c61862e"
+application_url = "https://soviet-alaska-prescribed-fatal.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_customers"
+
+[auth]
+redirect_urls = [
+  "https://soviet-alaska-prescribed-fatal.trycloudflare.com/auth/callback",
+  "https://soviet-alaska-prescribed-fatal.trycloudflare.com/auth/shopify/callback",
+  "https://soviet-alaska-prescribed-fatal.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-07"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "b2b-checkout-extensibility-dev-store.myshopify.com"
